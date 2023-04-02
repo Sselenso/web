@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -106,7 +106,7 @@ img {
 }
 
 .container {
-  max-width: 1420px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -145,6 +145,10 @@ img {
   opacity: 0.5;
 }
 
+.burger-menu {
+  display: none;
+}
+
 .section__content {
   max-width: 1150px;
   margin-bottom: 150px;
@@ -153,7 +157,6 @@ img {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.03em;
-  text-transform: uppercase;
   color: var(--color4);
   margin-bottom: 30px;
 }
@@ -214,15 +217,16 @@ img {
           align-items: center;
   width: 100%;
   padding: 33px 0;
+  margin-bottom: 0;
 }
 
 .main-content {
-  margin-bottom: 120px;
+  position: relative;
+  margin-bottom: 150px;
 }
 
 .main-title {
   padding-top: 37px;
-  padding-bottom: 30px;
   max-width: 956px;
   font-size: 60px;
   line-height: 60px;
@@ -230,13 +234,18 @@ img {
   color: var(--color4);
 }
 
-.main-subtitle {
+.main-img {
+  display: block;
   position: relative;
+}
+
+.main-subtitle {
+  position: absolute;
   max-width: 430px;
   font-size: 20px;
   line-height: 27px;
-  top: -120px;
-  right: -40px;
+  bottom: 40px;
+  left: 40px;
 }
 
 .about-text {
@@ -301,4 +310,9 @@ img {
 
 .srvice-subtitle {
   margin-bottom: 45px;
+}
+
+.srvice-subtitle span {
+  display: inline-block;
+  width: 244px;
 }

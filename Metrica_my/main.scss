@@ -1,5 +1,5 @@
 @import "_nullstyle";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -28,9 +28,10 @@ img {
 }
 
 .container {
-	max-width: 1420px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 10px;
+	//border: 1px solid #5309e8;
 }
 
 .header {
@@ -77,6 +78,7 @@ img {
 .navigation-link {
 }
 .burger-menu {
+	display: none;
 }
 .burger-button {
 }
@@ -90,8 +92,7 @@ img {
 	&__title {
 		font-size: 18px;
 		line-height: 25px;
-		letter-spacing: -0.03em;
-		text-transform: uppercase;
+		letter-spacing: -0.03em;		
 		color: var(--color4);
 		margin-bottom: 30px;
 	}
@@ -156,13 +157,15 @@ img {
 	align-items: center;
 	width: 100%;
 	padding: 33px 0;
+	margin-bottom: 0;
 }
 .main-content {
-	margin-bottom: 120px;
+	position: relative;
+	margin-bottom: 150px;
 }
 .main-title {
 	padding-top: 37px;
-	padding-bottom: 30px;
+	//padding-bottom: 30px;
 	max-width: 956px;
 	font-size: 60px;
 	line-height: 60px;
@@ -170,14 +173,17 @@ img {
 	color: var(--color4);
 }
 .main-img {
+	display: block;
+	position: relative;
 }
 .main-subtitle {
-	position: relative;
+	position: absolute;
 	max-width: 430px;
 	font-size: 20px;
 	line-height: 27px;
-	top: -120px;
-	right: -40px;
+	bottom: 40px;
+	left: 40px;
+	
 }
 .about-content {
 }
@@ -243,4 +249,8 @@ img {
 }
 .srvice-subtitle {
 	margin-bottom: 45px;
+}
+.srvice-subtitle span{
+	display: inline-block;
+	width: 244px;
 }
