@@ -5,8 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./css/main.css" />
-	<script src="./js/form.js"></script>
+	<link rel="stylesheet" href="./css/main.css" />	
+<!-- <script src="./js/form.js"></script>  -->
+	
 	<title>Metrica</title>
 </head>
 
@@ -232,20 +233,143 @@
 		</div>
 	</section>
 
+	<section class="gallery" id="gallery">
+    <div class="gallery__title-wrapper">
+        <div class="container">
+            <p class="gallery__title">Галерея проектов</p>
+        </div>
+    </div>
+    <div class="gallery__slides">
+        <div class="gallery__slide gallery__slide_active">
+            <img class="gallery__img" src="./img/slider1.webp" alt="Интерьер с большой кроватью">
+            <div class="gallery__text-wrapper">
+                <div class="container">
+                    <p class="gallery__text">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__slide">
+            <img class="gallery__img" src="./img/slider2.webp" alt="Проект с акцентным желтым креслом">
+            <div class="gallery__text-wrapper">
+                <div class="container">
+                    <p class="gallery__text">Проект гостиной в ЖК Маяк</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__slide">
+            <img class="gallery__img" src="./img/slider3.webp" alt="Интерьер гостинной в бежевых оттенках">
+            <div class="gallery__text-wrapper">
+                <div class="container">
+                    <p class="gallery__text">Визуализация кухни-гостиной в частном доме</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__slide">
+            <img class="gallery__img" src="./img/slider4.webp" alt="Проект кухни с островком">
+            <div class="gallery__text-wrapper">
+                <div class="container">
+                    <p class="gallery__text">Проект кухни в скандинавском стиле для ЖК Северный Ветер</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__controls-wrapper">
+            <div class="container">
+                <div class="gallery__controls">
+                    <button class="gallery__control-prev"></button>
+                    <button class="gallery__control-next"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+	</section>
+
+	<script src="./js/gallery.js"></script>
+
+
+
+	<!-- <section class="section__gallery" id="gallery">
+    <div class="gallery__content content">
+        <div class="container">
+            <p class="gallery__title title">Галерея проектов</p>
+        </div>
+    </div>
+    <div class="gallery__slider">
+        <div class="gallery__slide gallery__slide_active">
+					<picture>
+						<source srcset="./img/slider1.webp" type="image/webp">
+						<source srcset="./img/slider1.jpg" type="image/jpeg">
+						<img class="gallery__img img" src="./img/slider1.webp" alt="Интерьер с большой кроватью">
+					</picture>
+            <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                    <p class="gallery__subtitle subtitle">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__slide">
+					<picture>
+						<source srcset="./img/slider2.webp" type="image/webp">
+						<source srcset="./img/slider2.jpg" type="image/jpeg">
+						<img class="gallery__img img" src="./img/slider2.jpg" alt="Интерьер с большой кроватью">
+					</picture>
+            <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                    <p class="gallery__subtitle subtitle">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+        </div>
+				<div class="gallery__slide">
+					<picture>
+						<source srcset="./img/slider3.webp" type="image/webp">
+						<source srcset="./img/slider3.jpg" type="image/jpeg">
+						<img class="gallery__img img" src="./img/slider3.webp" alt="Интерьер с большой кроватью">
+					</picture>
+            <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                    <p class="gallery__subtitle subtitle">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+        </div>
+				<div class="gallery__slide">
+					<picture>
+						<source srcset="./img/slider4.webp" type="image/webp">
+						<source srcset="./img/slider4.jpg" type="image/jpeg">
+						<img class="gallery__img img" src="./img/slider4.webp" alt="Интерьер с большой кроватью">
+					</picture>
+            <div class="gallery__subtitle-wrapper">
+                <div class="container">
+                    <p class="gallery__subtitle subtitle">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery__controls-wrapper">
+            <div class="container">
+                <div class="gallery__controls">
+                    <button class="gallery__control-prev">
+											<svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19.6167 3.28325L16.6667 0.333252L0 16.9999L16.6667 33.6666L19.6167 30.7166L5.9 16.9999L19.6167 3.28325Z" fill="white"/>
+									</svg>
+										</button>
+                    <button class="gallery__control-next">
+											<svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.6167 3.28325L16.6667 0.333252L0 16.9999L16.6667 33.6666L19.6167 30.7166L5.9 16.9999L19.6167 3.28325Z" fill="white"/>
+												</svg>
+										</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section> -->
 <!--
 	<section class="section__gallery">
-		<div class="gallary__content content">
+		<div class="gallery__content content">
 			<div class="container">
 				<p class="gallery__title title">Галерея проектов</p>
 			</div>
 		</div>
 		<div class="gallery__slider slider">
 			<div class="gallery__slide slide">
-				<picture>
-					<source srcset="./img/slider1.webp" type="image/webp">
-					<source srcset="./img/slider1.jpg" type="image/jpeg">
-					<img class="gallery__img img" src="./img/slider1.webp" alt="Интерьер с большой кроватью">
-				</picture>
+				
 				<div class="gallery__subtitle-wrapper">
 					<div class="container">
 						<p class="gallery__subtitle subtitle">
@@ -300,9 +424,7 @@
 					<div class="container">
 						<div class="gallery__wrapper">
 						<div class="gallery__btnprev">							
-								<svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M19.6167 3.28325L16.6667 0.333252L0 16.9999L16.6667 33.6666L19.6167 30.7166L5.9 16.9999L19.6167 3.28325Z" fill="white"/>
-									</svg>						
+														
 						</div>						
 					<div class="gallery__btnnext">						
 							<svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
