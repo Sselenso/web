@@ -244,6 +244,9 @@ img {
 	&__list {
 		position: relative;
 	}
+	&__list:last-child {
+		margin-bottom: 34px;
+	}
 	&__value {
 		position: absolute;
 		top: 30px;
@@ -253,7 +256,7 @@ img {
 		margin-bottom: 25px;
 	}
 	&__subtitle {
-		margin-bottom: 85px;
+		margin-bottom: 69px;
 	}
 	&__button:hover {
 		background-color: var(--color1);
@@ -362,11 +365,13 @@ img {
 	&__item {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		//justify-content: space-between;
+		gap: 25px;
 	}
 	&__list:not(:last-child) {
-		max-width: calc(50% - 50px);
-		margin-bottom: 50px;
+		max-width: calc(50% - 25px);		
+		margin-bottom: 60px;
+		padding: 0 10px;
 	}
 	&__list:last-child {
 		max-width: 70%;
@@ -376,11 +381,13 @@ img {
 		line-height: 61px;
 		letter-spacing: -0.03em;
 		color: var(--color4);
+		margin-bottom: 14px;
 	}
 	&__text {
+		
 	}
 	&__text-second {
-		margin-top: 20px;
+		margin-top: 25px;
 	}
 }
 
@@ -467,8 +474,7 @@ img {
 
 .contact {
 	&__content {
-		margin-top: 150px;
-		margin-bottom: 150px;
+		margin-top: 150px;		
 	}
 	&__wrap {
 		display: flex;

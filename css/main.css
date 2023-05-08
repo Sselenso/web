@@ -313,6 +313,9 @@ img {
 .service__list {
   position: relative;
 }
+.service__list:last-child {
+  margin-bottom: 34px;
+}
 .service__value {
   position: absolute;
   top: 30px;
@@ -322,7 +325,7 @@ img {
   margin-bottom: 25px;
 }
 .service__subtitle {
-  margin-bottom: 85px;
+  margin-bottom: 69px;
 }
 .service__button:hover {
   background-color: var(--color1);
@@ -442,13 +445,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 25px;
 }
 .review__list:not(:last-child) {
-  max-width: calc(50% - 50px);
-  margin-bottom: 50px;
+  max-width: calc(50% - 25px);
+  margin-bottom: 60px;
+  padding: 0 10px;
 }
 .review__list:last-child {
   max-width: 70%;
@@ -458,9 +460,10 @@ img {
   line-height: 61px;
   letter-spacing: -0.03em;
   color: var(--color4);
+  margin-bottom: 14px;
 }
 .review__text-second {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .gallery {
@@ -559,7 +562,6 @@ img {
 
 .contact__content {
   margin-top: 150px;
-  margin-bottom: 150px;
 }
 .contact__wrap {
   display: -webkit-box;
